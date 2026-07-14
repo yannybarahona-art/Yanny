@@ -1,5 +1,5 @@
 
-import os
+#import os
 def main():
     item_price = 10
     tax_rate = 0.05
@@ -19,14 +19,14 @@ def main():
     difference = a - b
     print(f"Difference between a and b: {difference}")
 
-    estado=10
-    match estado:
-        case 2:
-            print("Estado is 2")
-        case 10:
-            print("Estado is 10")  
-        case 3:
-            print("Estado is 3")
+    #estado=10
+    #match estado:
+    #    case 2:
+    #        print("Estado is 2")
+    #    case 10:
+    #        print("Estado is 10")  
+    #    case 3:
+    #        print("Estado is 3")
 
 
     p=False
