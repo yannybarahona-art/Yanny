@@ -40,10 +40,10 @@ Documentation = "https://github.com#readme"
 Repository = "https://github.com.git" 
 Issues = "https://github.com/issues" 
  
-[project. Scripts]
+[project.scripts]
 my-cli = "my_package.cli:main" 
  
-[tool. Black] 
+[tool.black] 
 line-length = 88 
  
 [tool.pytest.ini_options] 
