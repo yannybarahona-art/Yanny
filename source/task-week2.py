@@ -192,9 +192,15 @@ def raw_data_manager() -> tuple[list[dict], list[str], list[str]]:
         "chaos@jurassic.org",
     ]
 
-    print("Raw Transactional Stream Loaded. Total Records:", len(raw_transactional_stream))
+    print(
+        "Raw Transactional Stream Loaded. Total Records:", len(raw_transactional_stream)
+    )
 
-    return raw_transactional_stream, marketing_blast_channel_a, marketing_blast_channel_b
+    return (
+        raw_transactional_stream,
+        marketing_blast_channel_a,
+        marketing_blast_channel_b,
+    )
 
 
 def process_monolithic_data_scrubbing_pipeline(
@@ -344,7 +350,9 @@ def compile_and_export_final_report(master_clean_records: list[dict]) -> None:
 
     print("=" * 70)
 
-    print("\nExporting raw string dataset snapshots directly to working folder paths...")
+    print(
+        "\nExporting raw string dataset snapshots directly to working folder paths..."
+    )
 
     raw_output_buffer = ""
 
@@ -354,7 +362,9 @@ def compile_and_export_final_report(master_clean_records: list[dict]) -> None:
     with open("raw_database_output_dump.txt", "w", encoding="utf-8") as file_writer:
         file_writer.write(raw_output_buffer)
 
-    print("Pipeline Monolith Program Terminated successfully. Data exported. System Idle.")
+    print(
+        "Pipeline Monolith Program Terminated successfully. Data exported. System Idle."
+    )
 
 
 if __name__ == "__main__":
