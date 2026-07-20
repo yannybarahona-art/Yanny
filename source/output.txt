@@ -1,0 +1,5 @@
+This is a sample text written to the file.
+This is the second line of the text.
+This is the third line of the text.
+This line is appended to the file.
+This is another appended line.
