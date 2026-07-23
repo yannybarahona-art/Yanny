@@ -26,11 +26,11 @@ invoice_data = [
     {"id": "INV-015", "amount": 8000, "status": "valid"},
 ]
 for invoice in invoice_data:
-        if not invoice:
-            continue
-        elif invoice["amount"] > 5000:
-            print(invoice["id"])
-            print(invoice["amount"])
-            print(invoice["status"])
-        elif invoice["status"] == "corrupted":
-            break
+    if not invoice:
+        continue
+    elif invoice["amount"] > 5000:
+        print(invoice["id"])
+        print(invoice["amount"])
+        print(invoice["status"])
+    elif invoice["status"] == "corrupted":
+        break
